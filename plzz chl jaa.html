@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 50px;
+  background: #ffffed;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #f3efe0;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.centercolumn {   
+  float: none;
+  width: 100%;
+}
+
+/* Fake image */
+.imagec {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#ffffed;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  
+  padding: 50px;
+  margin-top: 20px;
+  background: #f3efe0;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #f3efe0;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .centercolumn {   
+    width: 100%;
+    padding: 0;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>ADT's Illustrations</h1>
+  <p>Welcome to my tiny visual world!!!.</p>
+</div>
+
+<div class="topnav">
+  <a href="#Illustration-01">Illustration-01</a>
+  <a href="#Illustration-02">Illustration-02</a>
+  <a href="#Illustration-03">Illustration-03</a>
+  <a href="#Illustration-04">Illustration-04</a>
+</div>
+
+<div class="row">
+  <div class="centercolumn">
+    <div class="card">
+      <h2>Illustration-01</h2>
+      <h5><a name="Illustration-01">UNDER THE STARS</h5>
+      <p><img class="imagec" src="under the stars-01.jpg"></p>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Illustration-02</h2>
+      <h5><a name="Illustration-02">NICE DAY</h5>
+      <p><img class="imagec" src="nice day-01.jpg"></p>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Illustration-03</h2>
+      <h5><a name="Illustration-03">MIXTAPE</h5>
+      <p><img class="imagec" src="mixtape-01.jpg"></p>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>Illustration-04</h2>
+      <h5><a name="Illustration-04">BEACH</h5>
+      <p><img class="imagec" src="beach-01.jpg"></p>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  
+
+<div class="footer">
+  <h2>Thank You!!!</h2>
+</div>
+
+</body>
+</html>
